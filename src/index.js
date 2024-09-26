@@ -3,6 +3,7 @@ import express from "express";
 import { connect as databaseConnect } from "./config/database.config.js";
 import { initializeRoutes } from "./routes/index.js";
 import cors from "cors";
+
 const app = express();
 app.use(cors())
 app.use(express.json());
